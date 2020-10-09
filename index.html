@@ -1,13 +1,13 @@
 <html>
     <head>
         <script type="text/javascript">
-            var from_url = window.location.origin + "/poormandns";
-            var to_url = "http://10.0.0.25/redirected";
+            var from_url = window.location.origin + window.location.pathname;
+            var to_url = "http://10.0.0.25";
             var loc = window.location.href.replace(from_url, to_url);
             window.location.replace(loc);
         </script>
     </head>
     <body>
-        <a href="http://10.0.0.25">You just got REDIRECTED</a>
+        This requires javascript to be enabled. It's all local though, you can inspect the source.
     </body>
 </html>
